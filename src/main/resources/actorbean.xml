@@ -9,6 +9,7 @@
         <property name="actor" ref="actor1"/>
     </bean>
     <bean id="actor1" class="com.stackroute.Actor">
+
         <property name="name" value="Mahesh"/>
         <property name="age" value="40"/>
         <property name="aid" value="1"/>
