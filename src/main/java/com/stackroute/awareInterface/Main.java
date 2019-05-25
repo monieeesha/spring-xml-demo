@@ -1,4 +1,4 @@
-package com.stackroute;
+package com.stackroute.awareInterface;
 
 
 import org.springframework.context.ApplicationContext;
@@ -15,10 +15,6 @@ public class Main {
         Movie movie = (Movie) context.getBean("movie1");
         System.out.println(movie);
 
-        //contructor based injection rather than autowirebyType
-        ApplicationContext context1 = new ClassPathXmlApplicationContext("actorbean.xml");
-        Movie movie1= (Movie) context.getBean("movie2");
-        System.out.println(movie1);
 
     }
 }

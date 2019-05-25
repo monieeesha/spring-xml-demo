@@ -1,9 +1,9 @@
-package com.stackroute;
+package com.stackroute.awareInterface;
 
 public class Movie {
 
 
-    private  Actor actor;
+    private Actor actor;
 
     public void setActor(Actor actor)
     {
