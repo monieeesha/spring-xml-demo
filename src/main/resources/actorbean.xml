@@ -5,31 +5,20 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <bean id="movie1" class="com.stackroute.Movie" name="movieA,movieB">
-        <constructor-arg name="actor" ref="actor1" />
+    <bean id="movie1" class="com.stackroute.Movie" autowire="byName" >
+        <property name="actor" ref="actor1" />
     </bean>
     <bean id="actor1" class="com.stackroute.Actor">
-        <constructor-arg  name="name" value="Mahesh" index="0" type="String"/>
-        <constructor-arg   name="age" value="35" index="1" type="int"/>
-        <constructor-arg    name="aid" value="1" index="2" type="int"/>
+        <property  name="name" value="Mahesh" />
+        <property  name="age" value="35" />
+        <property  name="aid" value="1" />
     </bean>
-
-    <bean id="movie2" class="com.stackroute.Movie" scope="prototype"  >
-        <constructor-arg name="actor" ref="actor2" />
+    <bean id="movie2" class="com.stackroute.Movie"  >
+        <constructor-arg name="actor" ref="actor2" index="0"/>
     </bean>
     <bean id="actor2" class="com.stackroute.Actor">
-        <constructor-arg  name="name" value="sharukh" index="0" type="String"/>
-        <constructor-arg   name="age" value="40" index="1" type="int"/>
-        <constructor-arg   name="aid" value="2" index="2" type="int"/>
-    </bean>
-
-
-    <bean id="movie3" class="com.stackroute.Movie">
-        <constructor-arg name="actor" ref="actor3" />
-    </bean>
-         <bean id="actor3" class="com.stackroute.Actor">
-        <constructor-arg  name="name" value="Hrithik" index="0" type="String"/>
-        <constructor-arg   name="age" value="45" index="1" type="int"/>
-        <constructor-arg   name="aid" value="3" index="2" type="int"/>
+        <constructor-arg name="name" value="Hrithik" index="0" type="java.lang.String"/>
+        <constructor-arg name="age" value="45" index="1" type="int"/>
+        <constructor-arg name="aid" value="2" index="2" type="int"/>
     </bean>
 </beans>
