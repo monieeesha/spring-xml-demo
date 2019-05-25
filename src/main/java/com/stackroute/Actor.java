@@ -30,6 +30,12 @@ public class Actor {
         this.aid = aid;
     }
 
+    public Actor(String name, int age, int aid) {
+        this.name = name;
+        this.age = age;
+        this.aid = aid;
+    }
+
     @Override
     public String toString() {
         return "Actor{" +
