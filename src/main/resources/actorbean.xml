@@ -10,7 +10,7 @@
     </bean>
     <bean id="actor1" class="com.stackroute.Actor">
 
-        <property name="name" value="Mahesh"/>
+        <property name="name" value="shahid"/>
         <property name="age" value="40"/>
         <property name="aid" value="1"/>
     </bean>
@@ -19,7 +19,7 @@
         <property name="actor" ref="actor2"/>
     </bean>
     <bean id="actor2" class="com.stackroute.Actor">
-        <property name="name" value="Prabhas"/>
+        <property name="name" value="sharukh"/>
         <property name="age" value="41"/>
         <property name="aid" value="2"/>
     </bean>

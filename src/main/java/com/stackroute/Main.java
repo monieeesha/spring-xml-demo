@@ -12,7 +12,6 @@ import org.springframework.core.io.ClassPathResource;
 
 public class Main {
 
-
     @Deprecated
     public static void main(String[] args)
     {
@@ -24,7 +23,6 @@ public class Main {
         BeanFactory factory = new XmlBeanFactory(new ClassPathResource("actorbean.xml"));
         Movie  movie1=(Movie)factory.getBean("movie2");
         System.out.println(movie1);
-
 
         BeanDefinitionRegistry beanDefinitionRegistry = new DefaultListableBeanFactory();
         BeanDefinitionReader beanDefinitionReader = new XmlBeanDefinitionReader(beanDefinitionRegistry);
